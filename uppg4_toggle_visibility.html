@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 3: Toggle Visibility</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppgift 4: Toggle Visibility</title>
+  </head>
+  <body>
     <button onclick="toggleVisibility()">Toggle Visibility</button>
-        <!-- TODO: Skapa ett element som visas/döljs när knappen klickas på -->
+    <!-- TODO: Skapa ett element som visas/döljs när knappen klickas på -->
+  </body>
 
-
-   
-</body>
-
-<script>
+  <script>
     // Your script goes here
     function toggleVisibility() {
-        var element = document.getElementById('toggleElement');
-        element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+      var element = document.getElementById("toggleElement");
+      element.style.display =
+        element.style.display === "none" ? "block" : "none";
     }
-</script>
+  </script>
 </html>
