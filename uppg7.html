@@ -1,25 +1,37 @@
 <!--
-    Använd från genomgången (som ligger i filen nedan) för att skapa en miniräknare som fungerar för + - / *
-    Extrauppgift 1: Ändra inputfälten till sliders
-    Extrauppgift 2: Lägg till en dropdown för räknesätt och en knapp som utför beräkningen
-    Extrauppgift 3: Lägg till en knapp som lägger till en till slider/inputfält som ska ingå i beräkningen
-    För extrauppgift 3 krävs getElementsByClass
+    I denna fil har du fått en slider som du kan använda för att välja ett tal mellan 0 och 100.
+    Din uppgift är att bygga ett "spel" där användaren ska gissa vilket tal som är valt.
+    När användaren drar i slidern ska det stå om det valda talet är större eller mindre än det valda talet.
+    När användaren har gissat rätt ska det stå att användaren har gissat rätt.
+    All funktionalitet ska vara implementerad i filen uppg2.js.
+    Extrauppgift 1: Lägg till en knapp som slumpar fram ett nytt tal.
+    Extrauppgift 2: Lägg till kod i js så att det max-värdet på slidern ökar med 100 varje gång användaren gissat rätt.
+                    Starta även om spelet när användaren har haft rätt och ha koll på hur många gånger den har haft rätt.
+    Extrauppgift 3: Lägg till flera sliders som alla måste vara rätt för att användaren ska ha gissat rätt. 
+                    Anpassa hinten på lämpligt sätt.
+    
+    
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Calculator Example</title>
-  </head>
-  <body>
-    <input type="text" id="num1" placeholder="Enter number 1" />
-    <input type="text" id="num2" placeholder="Enter number 2" />
-    <br /><br />
-    <button onclick="calculateSum()">+</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <title>Conditional Statements Example</title>
+</head>
+<body>
 
-    <p id="result">Result:</p>
-  </body>
-  <script src="simple_calculator.js"></script>
+    <label for="numberSlider">Select number</label>
+    <br>
+    <input type="range" id="valueSlider" min="0" max="100" value="25">
+    <br>
+    <span id="selectedNumber"></span>
+    <br>
+    <p id="hint"></p>
+
+
+    <script src="uppg7.js"></script>
+</body>
 </html>
